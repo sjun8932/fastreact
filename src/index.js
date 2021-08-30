@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Board from './App'
+import {information} from './App'
 import reportWebVitals from './reportWebVitals';
 
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Board
+        title={information.title}
+        content={information.content}
+        user={information.user}
+    />,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
